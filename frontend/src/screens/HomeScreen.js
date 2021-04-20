@@ -12,17 +12,17 @@ export default function HomeScreen() {
     useEffect(() =>{
         const fecthData = async () =>{
             try{
-              setLoading(true)
+              setLoading(true);
             const { data } = await axios.get('/api/products');
-            setLoading(false)
+            setLoading(false);
             setProducts(data);  
-            } catch(err){
+            } catch(err) {
                 setError(err.message);
                 setLoading(false);
             }
         };
         fecthData();
-    }, [])
+    }, []);
     return (
         <div>
             {loading ? (
