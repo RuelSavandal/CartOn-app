@@ -72,6 +72,54 @@ const data = {
             numReviews: 11,
             description: 'Delicious Foods and Snacks'
         },
+        {
+            _id: '7',
+            name: 'Pringles',
+            category: 'Food',
+            image: '/images/p7.jpg',
+            price: 120,
+            countInStock: 100,
+            brand: 'Pringles',
+            rating: 5,
+            numReviews: 11,
+            description: 'Delicious Foods and Snacks'
+        },
+        {
+            _id: '8',
+            name: 'Pringles',
+            category: 'Food',
+            image: '/images/p8.jpg',
+            price: 120,
+            countInStock: 100,
+            brand: 'Pringles',
+            rating: 5,
+            numReviews: 11,
+            description: 'Delicious Foods and Snacks'
+        },
+        {
+            _id: '9',
+            name: 'Premium Chocolate Wafer',
+            category: 'Food',
+            image: '/images/p9.jpg',
+            price: 50,
+            countInStock: 100,
+            brand: 'LEXI',
+            rating: 5,
+            numReviews: 24,
+            description: 'Delicious Foods and Snacks'
+        },
+        {
+            _id: '10',
+            name: 'Gery Chocolatos',
+            category: 'Food',
+            image: '/images/p10.jpg',
+            price: 50,
+            countInStock: 100,
+            brand: 'Garuda Food',
+            rating: 5,
+            numReviews: 24,
+            description: 'Delicious Foods and Snacks'
+        },
     ],
 };
 export default data;

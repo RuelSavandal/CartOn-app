@@ -118,7 +118,10 @@ img.medium{
   width: 100%;
 }
 img.large{
-  width: 95%;
+  align-items: center;
+  width: 70%;
+  border-radius: 0.5rem;
+  
 }
 /* Card */
 .card{
