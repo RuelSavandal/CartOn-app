@@ -2,19 +2,19 @@ const data = {
     products: [
         {
             _id: '1',
-            name: 'SD Brownie Bites',
+            name: 'Brownie Bites',
             category: 'Food',
             image: '/images/p1.jpg',
             price: 50,
             countInStock: 10,
-            brand:'Super Delight',
+            brand:'SUPER DELIGHT',
             rating: 4.5,
             numReviews: 18,
             description: '200 GRAMS with real Chocolate Chip!'
         },
         {
             _id: '2',
-            name: 'BIG ROLLS Cheese & Choco',
+            name: 'Cheese & Choco',
             category: 'Food',
             image: '/images/p2.jpg',
             price: 130,
@@ -26,7 +26,7 @@ const data = {
         },
         {
             _id: '3',
-            name: 'SNACKERS Barquillios',
+            name: 'Barquillios',
             category: 'Food',
             image: '/images/p3.jpg',
             price: 50,
@@ -38,24 +38,24 @@ const data = {
         },
         {
             _id: '4',
-            name: 'SD Chocolate Chip Cookies',
+            name: 'Chocolate Chip Cookies',
             category: 'Food',
             image: '/images/p4.jpg',
             price: 80,
             countInStock: 10,
-            brand: 'Super Delight',
+            brand: 'SUPER DELIGHT',
             rating: 4.5,
             numReviews: 14,
             description: 'Delicious Foods and Snacks'
         },
         {
             _id: '5',
-            name: 'KHONG GUAN Black&White',
+            name: 'Black&White Cookies',
             category: 'Food',
             image: '/images/p5.jpg',
             price: 95,
             countInStock: 10,
-            brand: 'FIBISCO',
+            brand: 'KHONG GUAN',
             rating: 5,
             numReviews: 16,
             description: 'Delicious Foods and Snacks'
@@ -117,6 +117,30 @@ const data = {
             countInStock: 100,
             brand: 'Garuda Food',
             rating: 5,
+            numReviews: 24,
+            description: 'Delicious Foods and Snacks'
+        },
+        {
+            _id: '11',
+            name: 'Choco Mallows',
+            category: 'Food',
+            image: '/images/p11.jpg',
+            price: 70,
+            countInStock: 100,
+            brand: 'FIBISCO',
+            rating: 4.9,
+            numReviews: 24,
+            description: 'Delicious Foods and Snacks'
+        },
+        {
+            _id: '12',
+            name: 'Choco Crunchies',
+            category: 'Food',
+            image: '/images/p12.jpg',
+            price: 65,
+            countInStock: 100,
+            brand: 'FIBISCO',
+            rating: 4.9,
             numReviews: 24,
             description: 'Delicious Foods and Snacks'
         },
