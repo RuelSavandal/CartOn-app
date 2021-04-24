@@ -78,7 +78,7 @@ const data = {
             category: 'Food',
             image: '/images/p7.jpg',
             price: 120,
-            countInStock: 100,
+            countInStock: 0,
             brand: 'Pringles',
             rating: 5,
             numReviews: 11,
