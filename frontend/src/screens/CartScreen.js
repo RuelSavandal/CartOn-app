@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { addToCart } from '../actions/cartActions';
+import { addToCart, removeFromCart } from '../actions/cartActions';
 import MessageBox from '../components/MessageBox';
 
 export default function CartScreen(props) {
@@ -18,8 +18,9 @@ export default function CartScreen(props) {
             }
         }, [dispatch, productId, qty]);
 
-        const removeFromCartHandler =(id) => {
+        const removeFromCartHandler = (id) => {
             // delete action
+            dispatch(removeFromCart(id));
         };
         const checkoutHandler = () =>{
             props.history.push('/signin?redirect=shipping');
@@ -58,8 +59,8 @@ export default function CartScreen(props) {
                                             }
                                         >
                                             {[...Array(item.countInStock).keys()].map((x) => (
-                                                <option key={x + 1} value={x+1}>
-                                                    {x+1}
+                                                <option key={x + 1} value={x + 1}>
+                                                    {x + 1}
                                                 </option>
                                             ))}
                                         </select>
@@ -85,7 +86,7 @@ export default function CartScreen(props) {
                         <li>
                             <h2>
                                 Subtotal ({cartItems.reduce((a, c) => a + c.qty, 0)} items) : ₱
-                                 {cartItems.reduce((a,c) => a + c.price * c.qty, 0)}
+                                 {cartItems.reduce((a, c) => a + c.price * c.qty, 0)}
                             </h2>
                         </li>
                         <li>
