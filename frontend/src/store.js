@@ -17,6 +17,7 @@ const initialtState = {
         shippingAddress: localStorage.getItem('shippingAddress')
             ? JSON.parse(localStorage.getItem('shippingAddress'))
             : {},
+            paymentMethod: 'Gcash',
     },
 };
 const reducer = combineReducers({
