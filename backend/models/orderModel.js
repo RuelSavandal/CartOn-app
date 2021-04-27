@@ -21,16 +21,9 @@ const orderSchema = new mongoose.Schema(
       city: { type: String, required: true },
       postalCode: { type: String, required: true },
       country: { type: String, required: true },
-      lat: Number,
-      lng: Number,
+      
     },
     paymentMethod: { type: String, required: true },
-    paymentResult: {
-      id: String,
-      status: String,
-      update_time: String,
-      email_address: String,
-    },
     itemsPrice: { type: Number, required: true },
     shippingPrice: { type: Number, required: true },
     taxPrice: { type: Number, required: true },

@@ -22,7 +22,7 @@ export const isAuth = (req, res, next) => {
         jwt.verify(
             token, 
             process.env.JWT_SECRET || 'somethingsecret',
-            (err, decode) =>{
+            (err, decode) => {
                 if(err) {
                     res.status(401).send({ message: 'Invalid Token' });
                 } else {
