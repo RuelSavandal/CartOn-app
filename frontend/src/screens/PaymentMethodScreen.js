@@ -9,7 +9,7 @@ export default function PaymentMethodScreen(props) {
   if (!shippingAddress.address) {
     props.history.push('/shipping');
   }
-  const [paymentMethod, setPaymentMethod] = useState('Gcash');
+  const [paymentMethod, setPaymentMethod] = useState('PayPal');
   const dispatch = useDispatch();
   const submitHandler = (e) => {
     e.preventDefault();
@@ -27,14 +27,14 @@ export default function PaymentMethodScreen(props) {
           <div>
             <input
               type="radio"
-              id="gcash"
-              value="Gcash"
+              id="paypal"
+              value="PayPal"
               name="paymentMethod"
               required
               checked
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></input>
-            <label htmlFor="Gcash">GCASH</label>
+            <label htmlFor="paypal">PayPal</label>
           </div>
         </div>
         <div>
@@ -47,7 +47,7 @@ export default function PaymentMethodScreen(props) {
               required
               onChange={(e) => setPaymentMethod(e.target.value)}
             ></input>
-            <label htmlFor="stripe">Cash On Delivery</label>
+            <label htmlFor="stripe">Stripe</label>
           </div>
         </div>
         <div>
